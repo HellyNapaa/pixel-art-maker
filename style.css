@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+body{
+    background-color: #f4c531;
+}
+.wrapper{
+    background-color: #ffffff;
+    width: 80vmin;
+    position: absolute;
+    transform: translate(-50%, -50%); /* serve para centralizar o elemento */
+    top: 50%;
+    left: 50%;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+label{
+    display: block; 
+}
+
+span{
+    position: relative;
+    font-size: 22px;
+    bottom: -1px;
+}
+.opt-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 2px;
+}
+
+button{
+    background-color: #f4c531;
+    border: 10;
+    border-color: #aea6a6;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+input[type="color"]{
+    -moz-appearance: none; /* serve para tirar a barra de rolagem do input color */
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+/* webkit é o motor de renderização do chrome, o webkit-color-swatch serve para alterar a cor do input */
+input[type="color"]::-webkit-color-swatch-wrapper{
+    border-radius: 8px;
+    border: 2px solid #000000;
+}
+input[type="color"]::-moz-color-swatch {
+    border-radius: 8px;
+    border: 2px solid #000000;
+}
+.gridCol{
+    height: 1em;
+    width: 1em;
+    border: 1px solid #ddd;    
+}
+
+.gridRow{
+    display: flex;
+}
